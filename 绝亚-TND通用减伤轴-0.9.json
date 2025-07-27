@@ -2,9 +2,9 @@
   "name": "绝亚",
   "mapId": "887",
   "description": "绝亚空白",
-  "author": "穷孩子",
-  "acr": "TND减伤",
-  "job": "Scholar",
+  "author": "TND通用减伤轴",
+  "acr": "0.9.5",
+  "job": "Gunbreaker",
   "ClearCustomed": false,
   "entries": [
     {
@@ -653,7 +653,7 @@
           "id": "27x2iza3m",
           "name": "ST闪雷弹手",
           "timeout": 10,
-          "enabled": true,
+          "enabled": false,
           "conditions": [],
           "actions": [
             {
@@ -709,7 +709,32 @@
       "time": 56.7,
       "text": "流体强袭",
       "sync": "Ability { \"id\": \"\"49B7\"\", \"source\": \"\"Liquid\" Hand\" }",
-      "groups": []
+      "groups": [
+        {
+          "id": "fy2qr965u",
+          "name": "st挑手（如果有的话）",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "ST"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7533",
+              "target": "id",
+              "timeOffset": -2.8,
+              "forceUse": true,
+              "targetId": "11336"
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 69.8,
@@ -980,7 +1005,62 @@
       "time": 238.3,
       "text": "龙卷风",
       "sync": "Ability {\"id\":\"49C2\",\"source\":\"巡航驱逐者\"}",
-      "groups": []
+      "groups": [
+        {
+          "id": "gdz23jupa",
+          "name": "MT雪仇黑盾-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "MT"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7535",
+              "target": "self",
+              "timeOffset": -8,
+              "forceUse": false
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7393",
+              "target": "self",
+              "timeOffset": -3,
+              "forceUse": false
+            }
+          ]
+        },
+        {
+          "id": "nsx5d6m7i",
+          "name": "st星云吃平A",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "ST"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "16148",
+              "target": "self",
+              "timeOffset": -0.5,
+              "forceUse": true
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 241.3,
@@ -998,7 +1078,62 @@
       "time": 255.4,
       "text": "制导",
       "sync": "Ability {\"id\":\"482F\",\"source\":\"巡航驱逐者\"}",
-      "groups": []
+      "groups": [
+        {
+          "id": "02fi4qudc",
+          "name": "ST减伤吃平A-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "ST"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7531",
+              "target": "self",
+              "timeOffset": -4,
+              "forceUse": false
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "16161",
+              "target": "self",
+              "timeOffset": -1,
+              "forceUse": false
+            }
+          ]
+        },
+        {
+          "id": "34i2pn8q0",
+          "name": "MT减伤吃平A-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "MT"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7531",
+              "target": "self",
+              "timeOffset": -4,
+              "forceUse": false
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 256.2,
@@ -1022,7 +1157,39 @@
       "time": 272.7,
       "text": "回旋碎踢",
       "sync": "Ability {\"id\":\"4A72\",\"source\":\"巡航驱逐者\"}",
-      "groups": []
+      "groups": [
+        {
+          "id": "4btq1bqnt",
+          "name": "MT弃明黑盾-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "MT"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "3634",
+              "target": "self",
+              "timeOffset": -1,
+              "forceUse": false
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7393",
+              "target": "self",
+              "timeOffset": -1,
+              "forceUse": false
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 277.3,
@@ -1040,7 +1207,39 @@
       "time": 290.6,
       "text": "隐形地雷散布",
       "sync": "Ability {\"id\":\"4851\",\"source\":\"残暴正义号\"}",
-      "groups": []
+      "groups": [
+        {
+          "id": "fzu6i60ua",
+          "name": "MT暗影墙黑盾-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "MT"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "3636",
+              "target": "self",
+              "timeOffset": 0,
+              "forceUse": false
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7393",
+              "target": "self",
+              "timeOffset": 2,
+              "forceUse": false
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 292.7,
@@ -1070,19 +1269,115 @@
       "time": 315.5,
       "text": "大火炎放射",
       "sync": "Ability {\"id\":\"4845\",\"source\":\"残暴正义号\"}",
-      "groups": []
+      "groups": [
+        {
+          "id": "v4gho2key",
+          "name": "MT雪仇布道黑盾-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "MT"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7535",
+              "target": "self",
+              "timeOffset": -8,
+              "forceUse": false
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "16471",
+              "target": "self",
+              "timeOffset": -1,
+              "forceUse": true
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7393",
+              "target": "self",
+              "timeOffset": 3,
+              "forceUse": false
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 327.6,
       "text": "龙卷风",
       "sync": "Ability {\"id\":\"49C2\",\"source\":\"巡航驱逐者\"}",
-      "groups": []
+      "groups": [
+        {
+          "id": "o0575cse9",
+          "name": "ST减伤-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "ST"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7535",
+              "target": "self",
+              "timeOffset": -2,
+              "forceUse": false
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 336.2,
       "text": "水 雷",
       "sync": "Ability {\"id\":\"4841\",\"source\":\"残暴正义号\"}",
-      "groups": []
+      "groups": [
+        {
+          "id": "8y83zkc7e",
+          "name": "MT弃明黑盾-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "MT"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7393",
+              "target": "self",
+              "timeOffset": 0,
+              "forceUse": false
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "3634",
+              "target": "self",
+              "timeOffset": 0,
+              "forceUse": false
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 354.5,
@@ -1106,7 +1401,86 @@
       "time": 374.8,
       "text": "双重火箭飞拳",
       "sync": "Ability {\"id\":\"4847\",\"source\":\"残暴正义号\"}",
-      "groups": []
+      "groups": [
+        {
+          "id": "mou9j78s5",
+          "name": "MT减伤-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "MT"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7531",
+              "target": "self",
+              "timeOffset": -10,
+              "forceUse": false
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7535",
+              "target": "self",
+              "timeOffset": -7,
+              "forceUse": false
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "3634",
+              "target": "self",
+              "timeOffset": -4,
+              "forceUse": false
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7393",
+              "target": "self",
+              "timeOffset": -4,
+              "forceUse": false
+            }
+          ]
+        },
+        {
+          "id": "w1monrthc",
+          "name": "ST减伤-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "ST"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7531",
+              "target": "self",
+              "timeOffset": -10,
+              "forceUse": false
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "16161",
+              "target": "self",
+              "timeOffset": -4,
+              "forceUse": false
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 382.1,
@@ -1124,7 +1498,31 @@
       "time": 395,
       "text": "龙卷风",
       "sync": "Ability {\"id\":\"49C2\",\"source\":\"巡航驱逐者\"}",
-      "groups": []
+      "groups": [
+        {
+          "id": "58bysl4xr",
+          "name": "st光之心 北",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "ST"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "16160",
+              "target": "self",
+              "timeOffset": -2,
+              "forceUse": true
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 403.1,
@@ -1205,13 +1603,172 @@
       "time": 521.5,
       "text": "神罚射线",
       "sync": "Ability {\"id\":\"4A80\",\"source\":\"至尊亚历山大\"}",
-      "groups": []
+      "groups": [
+        {
+          "id": "yz6h59a85",
+          "name": "st挑衅 星云吃死刑 北",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "ST"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "16148",
+              "target": "self",
+              "timeOffset": -10,
+              "forceUse": true
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7533",
+              "target": "current",
+              "timeOffset": -7,
+              "forceUse": true
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7537",
+              "target": "party2",
+              "timeOffset": 1,
+              "forceUse": true
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "16161",
+              "target": "self",
+              "timeOffset": -4,
+              "forceUse": true
+            }
+          ]
+        },
+        {
+          "id": "ye3iagxld",
+          "name": "MT仇恨控制-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "MT"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7533",
+              "target": "current",
+              "timeOffset": 1,
+              "forceUse": true
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "3636",
+              "target": "self",
+              "timeOffset": -4,
+              "forceUse": false
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7531",
+              "target": "self",
+              "timeOffset": -6,
+              "forceUse": false
+            }
+          ]
+        },
+        {
+          "id": "7vbyc7g4n",
+          "name": "st团减 北",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "ST"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7535",
+              "target": "self",
+              "timeOffset": -2,
+              "forceUse": true
+            }
+          ]
+        },
+        {
+          "id": "qvvddwra2",
+          "name": "mt团减 北",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "16471",
+              "target": "self",
+              "timeOffset": -2,
+              "forceUse": true
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 524.6,
       "text": "圣炎 1",
       "sync": "Ability { \"id\": \"\"4A82\"\", \"source\": \"\"Alexander\" Prime\" }",
-      "groups": []
+      "groups": [
+        {
+          "id": "o6wf4zq1n",
+          "name": "MT弃明黑盾-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "MT"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "3634",
+              "target": "self",
+              "timeOffset": -2,
+              "forceUse": true
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7393",
+              "target": "self",
+              "timeOffset": 0,
+              "forceUse": true
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 526.7,
@@ -1317,7 +1874,31 @@
       "time": 610.9,
       "text": "神罚射线",
       "sync": "Ability {\"id\":\"4A80\",\"source\":\"至尊亚历山大\"}",
-      "groups": []
+      "groups": [
+        {
+          "id": "cthc3rxop",
+          "name": "MT无敌-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "MT"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "3638",
+              "target": "self",
+              "timeOffset": -2,
+              "forceUse": true
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 616,
@@ -1329,13 +1910,61 @@
       "time": 618.1,
       "text": "圣炎 2",
       "sync": "Ability { \"id\": \"\"4A82\"\", \"source\": \"\"Alexander\" Prime\" }",
-      "groups": []
+      "groups": [
+        {
+          "id": "ofsj7upui",
+          "name": "ST极光-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "ST"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "16151",
+              "target": "party2",
+              "timeOffset": 0,
+              "forceUse": true
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 620.2,
       "text": "圣炎 3",
       "sync": "Ability { \"id\": \"\"4A82\"\", \"source\": \"\"Alexander\" Prime\" }",
-      "groups": []
+      "groups": [
+        {
+          "id": "dsutov5ji",
+          "name": "MT黑盾-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "MT"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7393",
+              "target": "self",
+              "timeOffset": 0,
+              "forceUse": true
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 629.3,
@@ -1515,82 +2144,150 @@
       "groups": []
     },
     {
-      "time": 710.7,
-      "text": "火龙卷1",
-      "sync": "Ability {\"id\":\"4877\",\"source\":\"残暴正义号\"}",      
-      "groups": []
-    },
-    {
-      "time": 713.7,
-      "text": "火龙卷2",
-      "sync": "Ability {\"id\":\"4877\",\"source\":\"残暴正义号\"}",      
-      "groups": []
-    },
-    {
-      "time": 716.7,
-      "text": "火龙卷3",
-      "sync": "Ability {\"id\":\"4877\",\"source\":\"残暴正义号\"}",      
-      "groups": []
-    },
-    {
-      "time": 719.7,
-      "text": "火龙卷4",
-      "sync": "Ability {\"id\":\"4877\",\"source\":\"残暴正义号\"}",      
-      "groups": []
-    },
-    {
-      "time": 722.7,
-      "text": "火龙卷5",
-      "sync": "Ability {\"id\":\"4877\",\"source\":\"残暴正义号\"}",      
-      "groups": []
-    },
-    {
-      "time": 725.7,
-      "text": "火龙卷6",
-      "sync": "Ability {\"id\":\"4877\",\"source\":\"残暴正义号\"}",      
-      "groups": []
-    },
-    {
-      "time": 728.7,
-      "text": "火龙卷7",
-      "sync": "Ability {\"id\":\"4877\",\"source\":\"残暴正义号\"}",      
-      "groups": []
-    },
-    {
-      "time": 731.7,
-      "text": "火龙卷8",
-      "sync": "Ability {\"id\":\"4877\",\"source\":\"残暴正义号\"}",      
-      "groups": []
-    },
-    {
       "time": 731.7,
       "text": "黑暗命运 狂暴",
       "sync": "Ability {\"id\":\"4875\",\"source\":\"巡航驱逐者\"}",
-      "groups": []
-    },
-    {
-      "time": 734.7,
-      "text": "火龙卷9",
-      "sync": "Ability {\"id\":\"4877\",\"source\":\"残暴正义号\"}",      
-      "groups": []
-    },
-    {
-      "time": 737.7,
-      "text": "火龙卷10",
-      "sync": "Ability {\"id\":\"4877\",\"source\":\"残暴正义号\"}",      
-      "groups": []
-    },
-    {
-      "time": 740.7,
-      "text": "火龙卷11",
-      "sync": "Ability {\"id\":\"4877\",\"source\":\"残暴正义号\"}",      
-      "groups": []
-    },
-    {
-      "time": 743.7,
-      "text": "火龙卷12",
-      "sync": "Ability {\"id\":\"4877\",\"source\":\"残暴正义号\"}",      
-      "groups": []
+      "groups": [
+        {
+          "id": "a5x8xjd7u",
+          "name": "st团减 北",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "ST"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "16160",
+              "target": "self",
+              "timeOffset": -2,
+              "forceUse": true
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "血仇",
+              "target": "self",
+              "timeOffset": -5,
+              "forceUse": true
+            }
+          ]
+        },
+        {
+          "id": "ksyqq90dt",
+          "name": "mt团减 北",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "MT"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "16471",
+              "target": "self",
+              "timeOffset": -2,
+              "forceUse": true
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "血仇",
+              "target": "self",
+              "timeOffset": -14,
+              "forceUse": true
+            }
+          ]
+        },
+        {
+          "id": "y63xkx0vc",
+          "name": "三黑魔下d1昏乱及d1牵制 北",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "D1"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7560",
+              "target": "current",
+              "timeOffset": -2,
+              "forceUse": true
+            },
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7549",
+              "target": "current",
+              "timeOffset": -2,
+              "forceUse": true
+            }
+          ]
+        },
+        {
+          "id": "wwrdj1piv",
+          "name": "三黑魔下d2昏乱 北",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "D2"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7560",
+              "target": "current",
+              "timeOffset": -4,
+              "forceUse": true
+            }
+          ]
+        },
+        {
+          "id": "y7vmgeqsl",
+          "name": "三黑魔下d4昏乱 北",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [
+            {
+              "type": "role",
+              "enabled": true,
+              "role": "D4"
+            }
+          ],
+          "actions": [
+            {
+              "type": "skill",
+              "enabled": true,
+              "skillId": "7560",
+              "target": "current",
+              "timeOffset": -14,
+              "forceUse": true
+            }
+          ]
+        }
+      ]
     },
     {
       "time": 771.9,
@@ -1600,7 +2297,16 @@
         "before": 67,
         "after": 5
       },
-      "groups": []
+      "groups": [
+        {
+          "id": "p48xzjdjc",
+          "name": "MT减伤-Sinclair",
+          "timeout": 10,
+          "enabled": true,
+          "conditions": [],
+          "actions": []
+        }
+      ]
     },
     {
       "time": 787.3,
